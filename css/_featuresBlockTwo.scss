@@ -1,0 +1,118 @@
+.featuresBlockTwo {
+    padding: 50px 0;
+  h2 {
+    padding-top: 30px;
+  }
+  .BG {
+    position: relative;
+    top: 40px;
+    left: 40px;
+    img{
+    transition: .3s ease-in-out;
+    }
+    &:hover img{
+      transform: scale(1.1);
+    }
+    &:hover h5{
+      &::after{
+        width: 51%;
+      }
+    }
+    &:hover .bgFront{
+      box-shadow: #B8E4DA 0 10px 10px 0;
+    }
+    h5{
+        text-align: center;
+        margin-right: 20px;
+        margin-top: 20px;
+        position: relative;
+        &::after{
+          content: '';
+          position: absolute;
+          width: 0%;
+          height: 2px;
+          top: 25px;
+          left: 98px;
+          background-color: black;
+          transition: .3s ease-in-out;
+
+        }
+    }
+    p{
+        padding: 10px 40px;
+        text-align: center;
+    }
+    .bgFront {
+      position: absolute;
+      background: #fff;
+      top: 35px;
+      left: 75px;
+      padding: 10px;
+      height: 40vh;
+      transition: .3s ease-in-out;
+      border-radius: 10px;
+      span {
+        &::after {
+          content: " ";
+          width: 50%;
+          height: 5px;
+          border-radius: 7px;
+          background-color: rgba(32, 72, 79, 0.1);
+          position: absolute;
+          left: 10px;
+          top: 75px;
+        }
+        &::before {
+          content: "";
+          width: 40%;
+          height: 5px;
+          border-radius: 7px;
+          background-color: rgba(32, 72, 79, 0.1);
+          position: absolute;
+          left: 10px;
+          top: 87px;
+        }
+      }
+      .check {
+        position: relative;
+        top: 40px;
+        i {
+          background: #dcf2ed;
+          padding: 5px;
+          border-radius: 50%;
+          margin-bottom: 5px;
+        }
+        &::after {
+          content: " ";
+          width: 50%;
+          height: 8px;
+          border-radius: 7px;
+          background-color: rgba(32, 72, 79, 0.1);
+          position: absolute;
+          left: 40px;
+          top: 10px;
+        }
+      }
+      .fakeButton{
+        padding-top: 20px;
+        margin-top: 70px;
+        margin-left: 15px;
+        background: #B8E4DA;
+        width: 85%;
+        border: none;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+@media(max-width:768px){
+  .featuresBlockTwo{
+    width: 90%;
+    p{
+  display: none;
+ }
+  }
+ 
+
+}

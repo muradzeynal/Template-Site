@@ -1,0 +1,99 @@
+$color: #20484f;
+//Number**********
+.aboutNumber {
+  .numberText {
+    p {
+      padding: 20px 35px 50px 0;
+    }
+    button {
+      background: #20484f;
+      color: #ccc;
+      padding: 8px 20px;
+    }
+  }
+  .numberNbr {
+    h1 {
+      font-size: 70px;
+      color: $color;
+    }
+    p {
+      color: $color;
+      font-weight: 700;
+    }
+  }
+}
+//Learn*********
+.aboutLearn {
+  margin-top: 5rem;
+  p {
+    color: $color;
+    font-weight: 700;
+  }
+  .learnTxt {
+    width: 85%;
+    padding-left: 7rem;
+    p {
+      font-weight: 400;
+    }
+  }
+}
+//Photos***********
+.aboutPhotos {
+ 
+  margin-top: 5rem;
+  .photoTxt {
+    text-align: center;
+  }
+  .img2,
+  .img4 {
+    margin-top: 10rem;
+  }
+  img{
+    &:hover{
+      transform: scaleX(-1);
+    }
+  }
+}
+//Team***********
+.aboutTeam {
+  .divider {
+    width: 100%;
+    background: #fafafa;
+  }
+  background: #fafafa;
+  text-align: center;
+  margin-top: 4rem;
+  h2 {
+    padding-top: 3rem;
+  }
+  i {
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+    margin: 5px;
+    border: 2px solid #ccc;
+    color: #000;
+    &:hover {
+      background: #000;
+      color: cyan;
+      transform: scale(1.2);
+    }
+  }
+  .people {
+    margin-top: 30px;
+    transition: 0.3s ease-in-out;
+    border-radius: 50%;
+    border: 2px solid #20484f;
+
+    &:hover {
+      border: 2px dashed #20484f;
+      padding: 10px;
+    }
+  }
+  button{
+    background: $color;
+    width: 20%;
+    padding: 12px;
+    color: #fff;
+  }
+}
